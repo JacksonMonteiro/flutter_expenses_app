@@ -45,7 +45,6 @@ class Chart extends StatelessWidget {
       elevation: 6,
       margin: const EdgeInsets.all(10),
       child: Container(
-        height: MediaQuery.of(context).size.height * 0.25,
         padding: const EdgeInsets.all(10.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
