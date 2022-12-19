@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class TransactionList extends StatelessWidget {
-  List<Transcation> transactions;
+  List<Transacation> transactions;
   final void Function(String) onRemove;
 
   TransactionList({
     Key? key,
+    required this.onRemove, 
     required this.transactions,
-    required this.onRemove,
   }) : super(key: key);
 
   @override

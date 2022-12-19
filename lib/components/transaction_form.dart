@@ -4,7 +4,7 @@ import 'package:expenses/components/adaptative_text_field.dart';
 import 'package:flutter/material.dart';
 
 class TransactionForm extends StatefulWidget {
-  final void Function(String, double, DateTime) onSubmit;
+  final void Function(BuildContext, String, double, DateTime) onSubmit;
 
   const TransactionForm({Key? key, required this.onSubmit}) : super(key: key);
 
@@ -25,7 +25,7 @@ class _TransactionFormState extends State<TransactionForm> {
       return;
     }
 
-    widget.onSubmit(title, value, _selectedDate);
+    widget.onSubmit(context, title, value, _selectedDate);
     _cleanInputs();
   }
 
